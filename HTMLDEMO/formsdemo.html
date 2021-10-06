@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Page Test</title>
+</head>
+<body>
+    <!-- The Action attribute will determine where submitted forms will be
+    sent in order to be processed-->
+    <form action="/processingprogramexample" name="form1">
+        
+        <!-- The Label Element is used to add a Text name to the 
+        page for any Input Fields-->
+        <label for="userName">Please Enter Your Username: </label>
+        <!-- The Input form will be Self Closing, and will need the
+        Type attribute added-->
+        <input type="text" name="userName" placeholder="Username" required/>
+        <br/>
+        <br/>
+
+        <!-- The Passowrd attribute will mask the field content, 
+        but the data will not be encrypted yet-->
+        <label for="password">Please Enter Your Password: </label>
+        <input type="password" name="password"/>
+        <br/>
+        <br/>
+
+        <!-- The Number attribute will limit the field
+        content to only accepting numerical information-->
+        <label for="age">Please Enter Your Age: </label>
+        <input type="number" name="age" value="24"/>
+        <br/>
+        <br/>
+        
+        Gender
+        <!-- The Radio Appribute will make only 1 option selectable, 
+        even if there are multiple buttons created-->
+        
+        <!-- The Checked Attribute will set that option to being the 
+        default selected button-->
+        <input type="radio" name="gender" checked/>Male  
+        <input type="radio" name="gender"/>Female
+        <br/>
+        <br/>
+        
+        <!-- The Checkbox Appribute will make multiple options
+        selectable and unselectable-->
+        Hobbies
+        <input type="checkbox" name="hobbies"/>Sports
+        <input type="checkbox" name="hobbies"/>Music
+        <input type="checkbox" name="hobbies"/>Reading
+        <br/>
+        <br/>
+
+        <!-- The File Appribute will allow the user to upload and 
+        attach a file to the form-->
+        Choose an Attachement
+        <input type="file"/>
+        <br/>
+        <br/>
+
+        <!-- The Text Area element will allow users to enter in multiple lines
+        of text. This element can also have the Rows and Cols attributes to determine
+        the default Row/Column numbers-->
+        Input Comment here
+        <textarea rows="5" cols="20" name="comment"></textarea>
+        <br/>
+        <br/>
+
+        <!-- The Select Element will create a Drop-down list, but limit the user
+        to only selecting 1 option-->
+        Month- DropDown
+        <select name="Month">
+            <option value="" selected></option>
+            <option value="Jan">January</option>
+            <option value="Feb">February</option>
+            <option value="Mar">March</option>
+        </select>
+        <br/>
+        <br/>
+
+        <!-- Adding the "Multiple" attribute will adjust the -->
+        Month- List Box
+        <select name="Month" multiple>
+            <option value=""></option>
+            <option value="Jan">January</option>
+            <option value="Feb">February</option>
+            <option value="Mar">March</option>
+        </select>
+        <br/>
+        <br/>
+
+        <!-- The File Appribute will allow the user to upload and 
+        attach a file to the form-->
+        <input type="submit" name="submit"/>
+        <input type="reset" name="reset"/>
+
+    </form>
+</body>
+</html>

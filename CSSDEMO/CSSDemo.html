@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Demo</title>
+        <!-- In the Style Sheet below, the h2 is the Selector, and the Colors are the
+        Declarations
+    
+        This is an example of an Internal Style Sheet. 
+        This will style mutliple elements within 1 document-->
+        <style>
+            /* Element Selector */
+            h2
+            {
+                color: blueviolet;
+                background-color: coral;
+            }
+
+            div
+            {
+                background-color: cyan;
+            }
+
+            /* ID Selector */
+            #myp
+            {
+                color: darkblue;
+            }
+
+            /* Class Selector */
+            .myclass
+            {
+                color: darkorchid;
+            }
+
+            /* Universal Selector */
+            *{
+                color: orange;
+            }
+
+            /* Grouping Selector */
+            h2,h3
+            {
+                color: blueviolet;
+                background-color: coral;
+            }
+
+            /* Attribute Selector */
+            [title]
+            {
+                color: plum;
+            }
+
+
+            /* Pseudo Class Selector */
+            a:link
+            {
+                color: powderblue;
+            }
+
+
+        </style>
+        <!-- This will link in an External Style Sheet.     
+        This will edit multiple elements that will be used
+        in multiple documents-->
+        <link rel="stylesheet" href="mystyles.css"/>
+    </head>
+
+    <!-- These styles represent the Inline Style option. 
+    This will edit one singular element-->
+    <body>
+        <h1 style="color: blue;background-color: rgb(58, 226, 43);">CSS Testing Page</h1>
+        <p id="myp">Paragraph Styling Fun</p>
+        <h2>H2 Heading Test</h2>
+        <div>
+            <p class="myclass">Div Text</p>
+        </div>
+        <h3>H3 Heading Test</h3>
+        <div>
+            <p title="test"; style="background-color: white;">Title Testing</p>
+        </div>
+    
+    </body>
+
+
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Table Page</title>
+    
+    <style>
+        table
+        {
+            border-style: dotted; 
+            border-color: blue;
+        }
+        th
+        {
+            color: blueviolet;
+        }
+        td
+        {
+            border: 5px groove blueviolet;
+        }
+    </style>
+    
+</head>
+
+<!-- Assignment: Do Some Reseach on Colspan and border styles 
+
+
+- Border Styles are attributes added to the Table, to create an overall table border
+and separate the table cells
+    - <table border="2"> will add a solid line border, and the Nuber will determine 
+    the weight of the outer most border line (the higher the number, the thicker the
+    line)
+    - HTML does not have direct border tools (excluding above), so CSS elements will 
+    needed to create Border Style, using the <style> tag
+        - This style will generally be added near the top of the HTML code page, 
+        and will include the styling for the various sections of the table (border, 
+        table header, table data)
+-->
+
+<body>
+    <table>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+        </tr>
+        <tr>
+            <td>Zach</td>
+            <td>Funderburk</td>
+        </tr>
+
+        <!--- Colspan will set content to be extend across Multiple Columns
+        -EX. The name above will be split into 2 columns. The one below will
+        be set in 1 Table Cell that extend between 2 columns-->
+        <tr>
+            <td colspan="2">Josh Funderburk</td>
+        </tr>
+    </table>
+</body>
+
+</html>

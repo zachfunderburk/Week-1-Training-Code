@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Assignment</title>
+    <!-- Style Sheet to add the Form Border and Centering-->
+    <style>
+        
+        table
+        {
+            border-style: solid;
+            padding: 7px;
+        }
+
+        .center
+        {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Lunch Order Form</h1>
+    <form>
+        <table class="center">
+            <tr>
+                <td><label for="firstName">Enter First Name:</label></td>
+                <td style="text-align: right;"><input type="text" name="firstName" placeholder="First Name" required/></td>
+            </tr>
+            <tr> 
+                <td><label for="lastName">Enter Last name:</label></td>
+                <td style="text-align: right;"><input type="text" name="lastName" placeholder="Last Name" required></td>
+            </tr>
+            <tr> 
+                <td><label for="employeeID">Enter you Employee ID:</label></td>
+                <td style="text-align: right;"><input type="password" name="employeeID" placeholder="Employee ID"></td>
+            </tr>
+            <tr> 
+                <td><label for="orderSelect">Please Select an Order: </label></td>
+                <td>
+                    <input type="checkbox" name="orderSelect">Pizza
+                    <input type="checkbox" name="orderSelect">Chicken
+                    <input type="checkbox" name="orderSelect">Burger
+                </td>
+            </tr>
+            <tr> 
+                <td><label for="drinkSelect">Please Select an Order: </label></td>
+                <td>
+                    <input type="radio" name="drinkSelect">Water
+                    <input type="radio" name="drinkSelect">Lemonade
+                    <input type="radio" name="drinkSelect">Pop
+                </td>
+            </tr>
+            <tr>
+                <td><label for="orderComments">Please add any additional <br/> comments/requests here</label></td>
+                <td style="text-align: right;"><textarea rows="5" cols="20" name="orderComments"></textarea></td>
+            </tr>
+            <tr>
+                <td><input type="reset" name="reset"/></td>
+                <td style="text-align: right;"><input type="submit" name="submit"/></td>
+            </tr>
+            
+            
+        </table>
+    </form>
+</body>
+</html>
