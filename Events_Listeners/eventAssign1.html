@@ -1,0 +1,28 @@
+<!-- Assignment:
+Write an HTML Page with a script that displays the sum of 2 numbers 
+passed as parameter to the handler function
+
+-->
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Event Calculation Assignment</title>
+    </head>
+
+    <body>
+        <p id="text">Calcute the sum of 12 and 45</p>
+        <button id="calc">Calculate</button>
+
+
+        <script>
+            document.getElementById("calc").addEventListener("click",calculate)
+            function calculate()
+            {
+                let sum = 12 + 45;
+                document.getElementById("text").innerHTML="Sum equals " + sum;
+            }
+        </script>
+    </body>
+</html>

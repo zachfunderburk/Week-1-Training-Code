@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM Practice 2</title>
+    </head>
+
+    <body>
+        <p>This is the Paragraph Text 1</p>
+        <p>This is the Paragraph Text 2</p>
+
+        <h1 class="header">Heading 1</h1>
+        <h2 class="header">Heading 2</h2>
+        <h3 class="header">Heading 3</h3>
+
+        <button id="b1" onclick="colorUpdate()">Update Colors</button> <br/>
+        <button id="b2" onclick="headingColorUpdate()">Update Heading Colors</button>
+
+        <script>
+
+            //document.getElementById("b1").addEventListener("click",colorUpdate)
+            function colorUpdate()
+            {
+                var x = document.getElementsByTagName("p"); //This expects Multiple elements, becoming an Array
+                //x[0].style.background="red";
+                //x[1].style.background="red";
+
+                for(i=0;i<x.length;i++)
+                    x[i].style.background="blue";
+            }
+
+            function headingColorUpdate()
+            //Change the heading Background Colors
+            {
+                var x=document.getElementsByClassName("header"); //All elements with this Class name assigned will be affected by the function
+                for(i=0;i<x.length;i++)
+                    x[i].style.background="yellow";
+                    x[i].style.background="yellow";
+            }
+
+        </script>
+
+    </body>
+</html>

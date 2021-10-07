@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<!-- Learning JavaScript Events and Event Listeners-->
+<html>
+    <head>
+        <title>Learning Events</title>
+    </head>
+
+    <body>
+        <p id="demo">This is a Paragraph</p>
+        
+        <!-- HTML Button-->
+        <button id="b1">Click Here</button>
+        
+        
+        <script>
+            //This line will create an Event for the Button Element
+            //When the Click is performed, a function call myFunction will be called
+            document.getElementById("b1").addEventListener("click",myFunction);
+            function myFunction()
+            {
+                alert("This has triggered an event"); //Triggers a Pop up on the page
+                
+                //innerHMTL is used to get the HTML content written within an element
+                document.getElementById("demo").innerHTML="Changed by JS Event";
+            }
+
+            //When the Paragraph content is clicked, a Pop-up will appear
+            //Optional update of P text also set up
+            document.getElementById("demo").addEventListener("click",textUpdate);
+            function textUpdate()
+            {
+                alert("Paragraph has been clicked");
+                //document.getElementById("demo").innerHTML="Changed by Mouse Click";
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<!-- Practice page where the P1 content will be copied into P2 on button click-->
+<html>
+    <head>
+        <title>DOM Practice</title>
+    </head>
+
+    <body>
+        <p id="p1">This is the Paragraph Text</p>
+        <p id="p2"></p>
+
+        <button id="b1">Click Here</button>
+
+        <script>
+
+            document.getElementById("b1").addEventListener("click",textUpdate)
+            function textUpdate()
+            {
+                document.getElementById("p2").innerHTML= document.getElementById("p1").textContent;
+            }
+
+        </script>
+
+    </body>
+</html>
