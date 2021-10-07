@@ -43,25 +43,49 @@ console.log(mySum(10,20));
 
 //Anonymous Fucntions can be created without a Name, but must be attached to
 //a variable
-var myName=fucntion (x,y)
+var myName=function (x,y)
 {
     return x+y;
 }
+console.log(myName(20,20));
 
 //Callback Functions are executed once another function's execution
 //has completed. Here, the AlertFinished function will only execute
 //once the doHomework has completed
 function doHomework(subject, callback)
 {
-    alert(`Staring my ${subject} homework`);callback();
+    console.log(`Staring my ${subject} homework`);
+    callback();
 }
 function alertFinished()
 {
-    alert('Finished my homework');
+    console.log('Finished my homework');
 }
 doHomework('math', alertFinished);
 
-//Assignment: Callback Functions
-// calculateSum(num1, num2, callback)
+
+
+
+
+//Assignment Complete: Callback Functions
+//calculateSum(num1, num2, callback)
 //Callback=displaySum
+
+//THe Higher-Order function sets the Numbers for the calculation, and calls
+//the Callback function to pass a Sum
+function calculateSum(num1, num2, callback)
+{
+    let sum = num1 + num2;
+    callback(sum);
+}
+
+//The Callback Function gets the sum from the Calculate function, and performs
+//the console log
+function displaySum(sum)
+{
+    console.log('Calculation sum is ' + sum);
+}
+//This line calls the Calculate Function, which processes the calculation then 
+//calls the Callback function (displaySum)
+calculateSum(50,20,displaySum);
 
