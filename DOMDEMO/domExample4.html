@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<!-- Practice page where the P1 content will be copied into P2 on button click-->
+<html>
+
+<head>
+    <title>DOM Practice- Remove() Method</title>
+    <style>
+        .headColor {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> The Remove() Method</h1>
+    <p class="headColor" onclick="removeAttr()">The Remove Method removes elements from the DOM</p>
+    <p id="p2" onclick="removeText()">Click here to remove this paragraph</p>
+
+    <!-- <button id="b1" onclick="removeAttr()">Click Here</button> -->
+
+    <script>
+
+        //document.getElementById("b1").addEventListener("click",textUpdate)
+        function removeText() {
+            var text = document.getElementById("p2");
+            //text.parentNode.removeChild(text);
+            text.remove();
+        }
+
+        function removeAttr() {
+            document.getElementsByTagName("p")[0].removeAttribute("class");
+        }
+    </script>
+</body>
+
+</html>
+
+
+
+<!-- Assignment: Review Traversing the DOM -->

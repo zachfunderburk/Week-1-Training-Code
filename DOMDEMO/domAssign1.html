@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Assignment: Remove a List Item -->
+
+<head>
+    <title>DOM Example 3</title>
+</head>
+
+<body>
+
+    <ul id="myList">
+        <li id="delete">Lemonade</li>
+        <li>Coffee</li>
+        <li>Tea</li>
+    </ul>
+
+    <h3 class="header">Click here to update the list</h3>
+
+    <button id="b1" onclick="removeItem()">Update List</button> <br />
+
+
+    <script>
+        /*
+        function myFunction() {
+            var newItem = document.createElement("LI");         //Creates a new List Item Element
+            var textNode = document.createTextNode("Water");    //Creates new Text
+            newItem.appendChild(textNode);                      //Connects the new List Item to the new text
+
+            var list = document.getElementById("myList");       //Gets the UL element
+            var c = list.childNodes;                            //Gets the Reference to the UL element Children (2 LI elements)
+
+            list.insertBefore(newItem, list.childNodes[1]);     //adds in the new LI element to the existing list, above the Node Position entered
+        }
+        */
+
+        function removeItem() {
+            var item = document.getElementById('delete');
+            item.parentNode.removeChild(item);
+        }
+
+    </script>
+</body>
+
+</html>

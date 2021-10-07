@@ -15,6 +15,7 @@
         <button id="b1" onclick="colorUpdate()">Update Colors</button> <br/>
         <button id="b2" onclick="headingColorUpdate()">Update Heading Colors</button>
 
+
         <script>
 
             //document.getElementById("b1").addEventListener("click",colorUpdate)
@@ -31,9 +32,10 @@
             function headingColorUpdate()
             //Change the heading Background Colors
             {
-                var x=document.getElementsByClassName("header"); //All elements with this Class name assigned will be affected by the function
+                //var x=document.getElementsByClassName("header"); //All elements with this Class name assigned will be affected by the function
+                var x=document.querySelectorAll(".header")  // sets up the header class to be a CSS class (by using the "." in front)
+                                                            //Using the query.Selector would choose the first instance of that Class, rather than all instances
                 for(i=0;i<x.length;i++)
-                    x[i].style.background="yellow";
                     x[i].style.background="yellow";
             }
 

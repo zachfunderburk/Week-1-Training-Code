@@ -1,0 +1,103 @@
+<!-- Create  a class of Person, and a class of Employee-->
+
+<!--
+class Person{ // Super Class -- Parent Class
+	firstName;
+	lastName;
+	gender;
+	age;
+	details(){
+	innerhtml===  firstanme+lastname+......
+
+} 
+
+3 objects 
+
+class Employee extends Person{ // Sub Class - Child Class
+
+	dept;
+	salary;
+
+displaydetails(){
+}
+
+3 objects
+-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+
+    <hr/>
+
+    <p id="p4"></p>
+    <p id="p5"></p>
+    <p id="p6"></p>
+
+
+<script>
+class Person
+{
+    //firstName;
+    //lastName;
+    //age;
+    constructor(firstName,lastName,age)
+    {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+    }
+    details()
+    {
+        return this.firstName + ' ' + this.lastName + ', age ' + this.age;
+    }
+}
+
+x=prompt("Enter First Name: ")
+y=prompt("Enter Last Name: ")
+z=prompt("Enter Age: ")
+
+var person1 = new Person(x, y, z);
+var person2 = new Person('Josh', 'Funderburk', '24');
+var person3 = new Person('Brianna', 'Funderburk', '21');
+
+document.getElementById("p1").innerHTML = person1.details();
+document.getElementById("p2").innerHTML = person2.details();
+document.getElementById("p3").innerHTML = person3.details();
+
+class Employee extends Person
+{
+    dept;
+    salary;
+    constructor(firstName, lastName, age, dept, salary)
+    {
+        super(firstName,lastName,age);
+        //super(lastName);
+        this.dept = dept;
+        this.salary = salary;
+    }
+    displayDetails()
+    {
+        return 'Employee Info: ' + this.details() + 
+        ' Dept: ' + this.dept + ' Salary: ' + this.salary;
+    }
+}
+
+var employee1 = new Employee('Jackson', 'Ulyss', '28', 'Accounting', '$50k')
+var employee2 = new Employee('Charlie', 'James', '28', 'Sales', '$65k')
+var employee3 = new Employee('Garth', 'Williams', '32', 'Support', '$50k')
+
+document.getElementById("p4").innerHTML = employee1.displayDetails();
+document.getElementById("p5").innerHTML = employee2.displayDetails();
+document.getElementById("p6").innerHTML = employee3.displayDetails();
+
+</script>
+
+
+</body>
+</html>
+
