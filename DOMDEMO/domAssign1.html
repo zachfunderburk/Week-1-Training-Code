@@ -22,23 +22,18 @@
 
     <script>
         /*
-        function myFunction() {
-            var newItem = document.createElement("LI");         //Creates a new List Item Element
-            var textNode = document.createTextNode("Water");    //Creates new Text
-            newItem.appendChild(textNode);                      //Connects the new List Item to the new text
-
-            var list = document.getElementById("myList");       //Gets the UL element
-            var c = list.childNodes;                            //Gets the Reference to the UL element Children (2 LI elements)
-
-            list.insertBefore(newItem, list.childNodes[1]);     //adds in the new LI element to the existing list, above the Node Position entered
-        }
-        */
-
         function removeItem() {
             var item = document.getElementById('delete');
             item.parentNode.removeChild(item);
         }
+        */
 
+        function removeItem()
+        {
+            var myList = document.getElementsByTagName('ul');
+            var listItem = document.querySelector('li:firstItem')
+            myList.removeChild (listItem);
+        }
     </script>
 </body>
 

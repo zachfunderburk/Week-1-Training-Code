@@ -6,7 +6,7 @@
 <body>
     <!-- The Action attribute will determine where submitted forms will be
     sent in order to be processed-->
-    <form action="/processingprogramexample" name="form1">
+    <form action="/processingprogramexample" name="form1" method="POST">
         
         <!-- The Label Element is used to add a Text name to the 
         page for any Input Fields-->
@@ -61,8 +61,8 @@
         <!-- The Text Area element will allow users to enter in multiple lines
         of text. This element can also have the Rows and Cols attributes to determine
         the default Row/Column numbers-->
-        Input Comment here
-        <textarea rows="5" cols="20" name="comment"></textarea>
+        Input Comment here: 
+        <textarea rows="5" cols="20" name="comment" placeholder="Comment"></textarea>
         <br/>
         <br/>
 
@@ -91,7 +91,11 @@
 
         <!-- The File Appribute will allow the user to upload and 
         attach a file to the form-->
-        <input type="submit" name="submit"/>
+        <input type="file"/>
+        <br/>
+        <br/>
+
+        <input type="submit" name="submit" value="Click here to Submit the Form"/>
         <input type="reset" name="reset"/>
 
     </form>
