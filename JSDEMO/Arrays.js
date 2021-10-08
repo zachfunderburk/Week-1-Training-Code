@@ -17,8 +17,8 @@ console.log(cars);
 console.log(cars.length);
 
 //ToString and Join will change the Array into a String
-console.log(cars.toString());
-console.log(cars.join("_"))
+console.log(cars.toString()); //The string will separate the values with a comma
+console.log(cars.join("_")); //The string will separate the values with the symbol value in the Join method
 
 //the Pop funtion will remove the Last item from teh array
 var myCar=cars.pop();

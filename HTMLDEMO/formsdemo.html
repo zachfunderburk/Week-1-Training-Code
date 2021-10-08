@@ -2,6 +2,23 @@
 <html>
 <head>
     <title>Form Page Test</title>
+
+    <style>
+        /*
+        :invalid
+        {
+            color: red;
+        }
+        
+        input:active
+        {
+            color:red;
+        }
+        */
+    </style>
+
+<!-- Practice setting up Valid/Invalid to appear only when Form Submission is blocked, and only on the correct fields-->
+
 </head>
 <body>
     <!-- The Action attribute will determine where submitted forms will be
@@ -21,6 +38,12 @@
         but the data will not be encrypted yet-->
         <label for="password">Please Enter Your Password: </label>
         <input type="password" name="password"/>
+        <br/>
+        <br/>
+
+        <!-- Test of the Email Type-->
+        <label for="email">Please enter your Email</label>
+        <input type="email" name="email" required/>
         <br/>
         <br/>
 

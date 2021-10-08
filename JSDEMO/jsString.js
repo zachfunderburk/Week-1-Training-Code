@@ -17,12 +17,14 @@ console.log(carName1.substr(2,3));
 
 //String content can be adjusted with the Replace method
 //This is done by returning a new string, rather tham updating the called string
+//By Default, Replace will only replace the first instance of the value, and
+//is case sensitive
 let text=" Car Name";
 console.log(text);
 let newText= text.replace('Car', 'Book');
 console.log(newText);
 
-//Upper and Lowercase can cahge the content to the respective Case
+//Upper and Lowercase can change the content to the respective Case
 console.log(carName1.toUpperCase());
 console.log(carName1.toLowerCase());
 
